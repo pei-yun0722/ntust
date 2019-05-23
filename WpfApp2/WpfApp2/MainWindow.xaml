@@ -1,0 +1,23 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="SQLite資料庫" Height="679.988" Width="1173">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Height="423" Margin="10,218,0,0" VerticalAlignment="Top" Width="909" Grid.ColumnSpan="4"/>
+        <Button Content="載入" HorizontalAlignment="Left" Margin="938,355,0,0" VerticalAlignment="Top" Width="211" Click="Button_Click" RenderTransformOrigin="3.676,3.595" Height="40" Grid.Column="2" Grid.ColumnSpan="2"/>
+        <ComboBox Grid.Column="4" HorizontalAlignment="Left" Margin="241.333,198,-361.333,0" VerticalAlignment="Top" Width="120" Height="21"/>
+        <TextBox x:Name="textbox" HorizontalAlignment="Left" Height="43" Margin="935,283,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="211" Grid.Column="2" Grid.ColumnSpan="2" FontSize="36"/>
+
+    </Grid>
+</Window>
